@@ -1,0 +1,680 @@
+QUESTION 1:
+PRACTICE SUBMISSION NOT NEEDED
+
+QUESTION2:   https://medium.com/@reach2arunprakash/guvi-zen-class-find-the-culprits-and-nail-them-9ee6c67c44fb
+
+code1:solved
+Find the culprit
+
+fix.html
+<!DOCTYPE html>
+<html>
+<body>
+ <script>
+ alert( “I’m JavaScript!’);
+ </script>
+ Whats the error in this ?
+</body>
+
+
+//Explanation: In the alert inverted commas are used in the wrong way
+//correct code:
+</html>
+<!DOCTYPE html>
+<html>
+<body>
+ <script>
+ alert( "I'm JavaScript!");
+ </script>
+ Whats the error in this ?
+</body>
+</html>
+
+code2:solved
+Find the culprit and invoke the alert
+
+fix.html
+
+<!DOCTYPE html>
+<html>
+<body>
+ <script src=”script.js”></script>
+</body>
+</html>
+
+scripts.js
+alert(“I’m invoked!”);
+
+
+//Explanation:use a file named script.js to link it to the html file
+
+code3:solved
+
+Explain the below how it works
+
+explain.html
+
+<!DOCTYPE html>
+<html>
+<body>
+ <script src='script.js'></script>
+</body>
+</html>
+
+script.js
+
+alert("I'm JavaScript!");
+alert('Hello') // this line is not having semicolon
+alert(`Wor
+ ld`)
+alert(3 +
+1
++ 2); // this is multiple line code and its working
+
+
+//Explanation:1.alert will give a message on the browser
+2.semicolon is not required in javascript
+3.going to new line will give a new line in browser message too
+4.alert also supports arithmetic operations which gives the value 6
+
+
+code4:
+Fix the below to alert Guvi geek
+
+fix.html
+
+<!DOCTYPE html>
+<html>
+<body>
+ <script src=”script.js”></script>
+</body>
+</html>
+
+
+script.js
+
+let admin=9, fname=10.5; 
+fname = "Guvi";
+lname = "geek"
+admin = fname+lname;
+alert( admin ); // "Guvi geek"
+
+//Explanation:
+use of let makes it possible to redeclare the values
+code:
+let admin=9, fname=10.5; 
+fname = "Guvi";
+lname = "geek"
+admin = fname+lname;
+alert( admin ); // "Guvi geek"
+
+
+code5:solved
+Fix the below to alert hello Guvi geek
+
+fix.html
+
+<!DOCTYPE html>
+<html>
+<body>
+ <script src='script.js'></script>
+</body>
+</html>
+
+
+script.js
+
+let fname=10.5; 
+fname = "Guvi";
+lname = "geek"
+let name = fname+lname;
+alert( 'hello ${name}' );
+
+//Explanation:
+use backticks in alert in place of inverted comma
+code:
+let fname=10.5; 
+fname = "Guvi";
+lname = "geek"
+let name = fname+lname;
+alert( `hello ${name}` );
+
+
+code6:solved
+Fix the below to alert sum of two numbers
+fix.html
+<!DOCTYPE html>
+<html>
+<body>
+ <script src='script.js'></script>
+</body>
+</html>
+
+
+script.js
+let a = prompt("First number?");
+let b = prompt("Second number?");
+alert(a + b);
+
+solution
+let a = prompt("First number?");
+let b = prompt("Second number?");
+alert(parseInt(a) + parseInt(b));
+
+
+code7:solved
+Fix the below to alert sum of two number
+fix.html
+<!DOCTYPE html>
+<html>
+<body>
+ <script src='script.js'></script>
+</body>
+</html>
+
+script.js
+let a = prompt("First number?");
+let b = prompt("Second number?");
+alert(a + b);
+
+// solution
+let a = prompt("First number?");
+let b = prompt("Second number?");
+alert(parseInt(a) + parseInt(b));
+
+code8:solved
+If you run the below scritpt you will get “Code is Blasted”
+Explain Why the Code is blasted and how to diffuse it and get “Diffused”.
+
+fix.html
+<!DOCTYPE html>
+<html>
+<body>
+ <script src=”script.js”></script>
+</body>
+</html>
+
+
+script.js
+var a = "2" > "12";
+//Don't touch below this
+if (a) {
+  console.log("Code is Blasted")
+}
+else
+{
+  console.log("Diffused") 
+}
+ 
+
+ /* Explanation:
+ since 2 is greater than 12 code is blasted is printed in the console */
+
+
+code8:solved
+How to get the success in console.
+
+fix.html
+<!DOCTYPE html>
+<html>
+<body>
+ <script src=”script.js”></script>
+</body>
+</html>
+
+script.js
+let a = prompt("Enter a number?");
+//Don't modify any code below this
+if (a) {
+ console.log( 'OMG it works for any number inc 0' );
+}
+else
+{
+ console.log( "Success" );
+
+ Explanation:
+change the console.log statements
+
+code:
+let a = prompt("Enter a number?");
+//Don't modify any code below this
+if (a) {
+    console.log( "Success" );
+ 
+}
+else
+{
+    console.log( 'OMG it works for any number inc 0' );
+}
+
+
+code9:
+How to get the correct score in console.
+fix.html
+<!DOCTYPE html>
+<html>
+<body>
+ <script src=”script.js”></script>
+</body>
+</html>
+
+
+script.js
+
+let value = prompt('How many runs you scored in this ball');
+if (value === 4) {
+      console.log("You hit a Four");
+} else if (value === 6) {
+      console.log("You hit a Six");
+} else {
+      console.log("I couldn't figure out");
+}
+
+// correct code
+let value = prompt('How many runs you scored in this ball');
+if (value == 4) {
+      console.log("You hit a Four");
+} else if (value == 6) {
+      console.log("You hit a Six");
+} else {
+      console.log("I couldn't figure out");
+}
+
+
+
+
+QUESTION3:https://medium.com/@reach2arunprakash/www-guvi-io-zen-4fa483a7d359
+
+
+code1:
+Write a code to print the numbers in the array
+Output: 1234567891011
+
+var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+var new_string = “”;
+ 
+for (var i = 1; i < 11; i--) {
+ new_string += numsArr[i] 
+}
+console.log(new_string);
+
+//Correct code:
+var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+var new_string = '';
+ 
+for (var i = 0; i < 11; i++) {
+ new_string += numsArr[i] 
+}
+console.log(new_string);
+
+code2:
+Write a code to print the numbers in the array
+Output: 1,2,3,4,5,6,7,8,9,10,11
+
+var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+var new_string = “”;
+ 
+for (var i = 1; i < 11; i++) {
+ new_string += numsArr[i] + , 
+}
+console.log(new_string);
+
+//correctcode:
+var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+var new_string = '';
+ 
+for (var i = 0; i < 11; i++) {
+ new_string += numsArr[i] ;
+}
+console.log(new_string);
+
+code3:
+Write a code to print from last to first with spaces (Make sure there is no space after the last element 1)
+Output: 11 10 9 8 7 6 5 4 3 2 1
+var new_string = “”;
+ 
+for (var i = 11; i > 0; i — ) {
+ new_string += numsArr[i] + “ “ 
+}
+console.log(new_string);
+
+//correctcode
+var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+var new_string = '';
+ 
+for (var i = 10; i >= 0; i--) {
+ new_string += numsArr[i] + ' '
+}
+console.log(new_string);
+
+code4:
+var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+var new_string = '';
+var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+for (var i = 10; i >= 0; i--) {
+ new_string += numsArr[i] + ' ' 
+}
+
+console.log(new_string);
+
+
+code5:
+Write a code to replace the array value — If the number is even, replace it with ‘even’.
+Output:[ 1, “even”, 3, “even”, 5, “even”, 7, “even”, 9, “even”, … ]
+
+var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+for (var i = 0; i <=10; i++) {
+ if(numsArr[i] %2 == 0 )
+ {
+ numsArr[i] = odd
+ }
+}
+console.log(numsArr);
+
+//correctcode:
+var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+for (var i = 0; i <=10; i++) {
+ if(numsArr[i] %2 == 0 )
+ {
+ numsArr[i] = 'even'
+ }
+}
+console.log(numsArr);
+
+
+code6:
+Write a code to replace the array value — If the index is even, replace it with ‘even’.
+Output: [ “even”, 2, “even”, 4, “even”, 6, “even”, 8, “even”, 10, … ]
+
+var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+for (var i = 0; i <=10; i++) {
+ if(numsArr[i] %2 == 0 )
+ {
+ numsArr[i] = even
+ }
+}
+console.log(numsArr);
+
+//correctcode:
+var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+for (var i = 0; i <=10; i++) {
+ if(i %2 == 0 )
+ {
+ numsArr[i] = 'even'
+ }
+}
+console.log(numsArr);
+
+
+
+
+
+code8:
+Write a code to add the even numbers and subract the odd numbers
+Output: 94
+
+code:
+var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+var sum=100;
+for (var i = 0; i <=10; i++) {
+ if(numsArr[i]%2!=0);
+ {
+ sum += numsArr[i]
+ }
+ else
+ {
+ sum -= numsArr[i]
+ }
+}
+console.log(sum);
+
+//correctcode:
+var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+var sum=100;
+for (var i = 1; i <10; i++) {
+ if(numsArr[i]%2!=0)
+ {
+ sum += numsArr[i]
+ }
+ else
+ {
+ sum -= numsArr[i]
+ }
+}
+console.log(sum);
+
+code9:
+Write a code to print inner arrays
+Output:
+Array(5) [ 1, 2, 3, 4, 5 ]
+Array(6) [ 6, 7, 8, 9, 10, 11 ]
+
+var numsArr = [[1, 2, 3, 4, 5][ 6, 7, 8, 9, 10, 11]];
+for (var i = 0; i < numsArr.length; i++); {
+ console.log( numsArr[i])
+}
+
+correctcode:
+var numsArr = [[1, 2, 3, 4, 5],[ 6, 7, 8, 9, 10, 11]];
+for (var i = 0; i < numsArr.length; i++) {
+ console.log( numsArr[i])
+}
+
+
+
+QUESTION4:
+
+1.
+Fix the code to get the largest of three.
+Code:
+aa = (f,s,t) => {
+ let f,s,t;
+ console.log(f,s,t);
+ if(f>s &&f>t){
+ console.log(f)}
+ else if(s>f && s>t){
+ console.log(s)}
+ else{
+ console.log(t)}
+}
+aa(1,2,3);
+
+//correctcode:
+aa = (f,s,t) => {
+    // let f,s,t;
+    // console.log(f,s,t);
+    if(f>s && f>t){
+    console.log(f)}
+    else if(s>f && s>t){
+    console.log(s)}
+    else{
+    console.log(t)}
+   }
+   aa(1,2,3);
+
+2.
+Fix the code to Sum of the digits present in the number
+Code:
+let n = 123;
+console.log(add(n));
+function add(n)
+{
+let sum = 10;
+for(var i=0;i<n.length;i++){
+ sum+=n[i]
+ }
+ return sum;
+}
+
+
+//correct code:
+let n = 123;
+
+console.log(add(n));
+
+function add(n)
+{
+let sum = 0;
+for(let i=0;i<n.length;i++){
+ sum+=n[i]
+
+ }
+ return sum;
+}
+
+
+3.
+Fix the code to Sum of all numbers using IIFE function
+Code:
+const arr = [9,8,5,6,4,3,2,1];
+(function() {
+ let sum = 0;
+ for (var i = 0; i <= arr.length; i++);{
+ sum += arr[i];
+ }
+ console.log(sum);
+ return sum;
+})();
+
+
+//correctcode:
+((arr) =>{
+ let sum = 0;
+ for (var i = 0; i <= arr.length; i++);{
+ sum += arr[i];
+ }
+ console.log(sum);
+ return sum;
+})([9,8,5,6,4,3,2,1]);
+
+4.
+Fix the code to gen Title caps.
+Code:
+var arr = [“guvi”, “geek”, “zen”, “fullstack”];
+var ano = function(arro) {
+ for (var i = 0; i <= arro.length; i++) {
+ console.log(arro[i][0].toUpperCase() + arro[i].substr(1));
+ }
+}
+ano();
+
+//correctcode:
+
+var arr = ["guvi", "geek", "zen", "fullstack"];
+
+var ano = function (arro) {
+  for (var i = 0; i <= arro.length; i++) {
+    console.log(arro[i][0].toUpperCase()+ arro[i].substr(1));
+  }
+};
+ano(arr);
+
+5.
+Fix the code to return the Prime numbers
+Code:
+const newArray=[1,3,2,5,10];
+const myPrime=newArray.filter(num=>{
+ for(let i=2;i<=num;i++){
+ if(num%i===0)
+ {
+ return true;
+ }
+ }
+ return num===1;
+});
+console.log(myPrime);
+
+correctcode:
+const newArray=[1,3,2,5,10];
+const myPrime=newArray.filter(num=>{
+ for(let i=2;i<=num;i++){
+ if(num%i===0)
+ {
+ return true;
+ }
+ }
+ return num===1;
+});
+console.log(myPrime);
+
+6.
+Fix the code to sum the number in that array
+Code:
+const num = [10, 20, 30, 40,50,60,70,80,90,100] 
+const sum = (a, b) =>
+ a + b
+const sum = num.reduce(sum)
+console.log(sum);
+
+//correctcode:
+const num = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
+const sum = (a, b) => a + b;
+
+console.log(num.reduce(sum));
+
+
+
+
+
+7.
+Fix the code to gen Title caps.
+Code:
+var arr = [“guvi”, “geek”, “zen”, “fullstack”];
+(function() {
+ for (var i = 0; i <= arr.length; i++) {
+ console.log(arr[0][i].toUpperCase() + arr[i].substr(1));
+ }
+})();
+
+//correctcode:
+var arr = ['guvi','geek','zen','fullstack'];
+(function() {
+ for (var i = 0; i <= arr.length; i++) {
+ console.log(arr[i][0].toUpperCase() + arr[i].substr(1));
+ }
+})();
+
+
+8.
+print all odd numbers in an array using IIFE function
+Code:
+var arr = [1, 2, 3, 5, 7, 79, 7, 2, 6, 9, 4];
+(function() {
+ for (var i = 0; i < arr.length; i++) {
+ if (arr[i] % 2 === 0) {
+ console.log(arr[i]);
+ }}
+})();
+
+//correctcode:
+var arr = [1, 2, 3, 5, 7, 79, 7, 2, 6, 9, 4];
+(function() {
+ for (var i = 0; i < arr.length; i++) {
+ if (arr[i] % 2 != 0) {
+ console.log(arr[i]);
+ }}
+})();
+
+
+9.
+Fix the code to reverse.
+Code:
+(function(str){
+ str1 = str.split(“ “).reverse().join(“”);
+ console.log(str1); 
+})(“abcd”)
+
+//correctcode:
+(function(str){
+    str1 = str.split('').reverse().join('');
+    console.log(str1); 
+   })('abcd')
+
+
+
+
+
+
+
+
+,
